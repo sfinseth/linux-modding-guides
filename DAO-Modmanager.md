@@ -14,31 +14,35 @@ Step by step:
 
 I used these settings
 
-## Game info
+## Game info tab
 * Name: DAO Modmanager
 * Runner: Wine (Runs Windows games)
 
-## Game options
-* Execurable: `/home/<username>/Games/DAO-Modmanager/DAO-Modmanager.exe`
+## Game options tab
+Replace `<username>` with your username (type `whoami` and hit enter in a terminal to get your username)
+* Executable: `/home/<username>/Games/DAO-Modmanager/DAO-Modmanager.exe`
 * Working directory: `/home/<username>/Games/DAO-Modmanager/`
 * Wine prefix: `/home/<username>/Games/DAO-Modmanager/`
 * Prefix architecture: `Auto (default)`
 
-## Runner Options and System options
+## Runner Options and System options tabs
 * Left at my default settings
+* Hit `Save` in the upper right corner of the Lutris Window
 
 Now run `DAO Modmanager` from Lutris and let it set up the prefix
 
 ## Configuring DAO Modmanager to work
 
-Once DAO Modmanager is started up in our new prefix we need to ensure it can find all the correct DA:O folders
+Once DAO Modmanager is started up in our new prefix we need to ensure it can find all the correct DA:O folders. This assumes that your steam library is set to the default settings - if you have other settings change the part that is `\home\<username>\.local\share\` to reflect this. If your steam library is on another drive under `/mnt/disk1` that part would be `Z:\mnt\disk1\`.
 
-* Go to options tab and change these values under `Dragon Age: Origins` section:
+Again, `<username>` should be replaced with your username. (`whoami` in a terminal to get it)
+
+* Go to options tab and change these values under `Dragon Age: Origins` header:
 1. Dragon Age Folder: `Z:\home\<username>\.local\share\Steam\steamapps\compatdata\47810\pfx\drive_c\users\steamuser\Documents\BioWare\Dragon Age`
 2. Settings Folder: `Z:\home\<username>\.local\share\Steam\steamapps\compatdata\47810\pfx\drive_c\users\steamuser\Documents\BioWare\Dragon Age\Settings`
 3. AddIns Folder: `Z:\home\<username>\.local\share\Steam\steamapps\compatdata\47810\pfx\drive_c\users\steamuser\Documents\BioWare\Dragon Age\AddIns`
 
-* Then change these values under the `Program Path` section:
+* Then change these values under the `Program Path` section: (These are only necessary if you want to start DAO from the mod manager or access the console in game)
 1. DAO_exe: `Z:\home\<username>\.local\share\Steam\steamapps\common\Dragon Age: Origins - Ultimate Edition\bin_ship\daoorigins.exe`
 2. DAO_Config_exe: `Z:\home\<username>\.local\share\Steam\steamapps\common\Dragon Age: Origins - Ultimate Edition\bin_ship\DAOriginsConfig`
 3. DAO_Toolset_exe: `Z:\home\<username>\.local\share\Steam\steamapps\common\Dragon Age: Origins - Ultimate Edition\bin_ship\DragonAgeToolset.exe`
