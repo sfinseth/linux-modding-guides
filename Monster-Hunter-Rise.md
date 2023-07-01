@@ -2,7 +2,7 @@
 
 ## Prerequisite: REFramework
 
-REFramework is a requirement for all other mods for Monster Hunter: Rise/Sunbreak and you can get it from [Nexusmods](https://www.nexusmods.com/monsterhunterrise/mods/26).
+REFramework is a requirement for all other mods for Monster Hunter: Rise/Sunbreak and you can get it from [praydog's github page](https://github.com/praydog/REFramework-nightly/releases/tag/latest). Download the file named `MHRISE.zip`
 
 Once it's downloaded, extract it and then the file `d8input.dll` needs to be placed in the install folder for the game. Easiest way to get there is to navigate to the game on Steam, right click it and under manage, click `Browse local files`.
 
